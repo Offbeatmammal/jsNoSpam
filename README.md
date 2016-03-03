@@ -10,8 +10,8 @@ Requires developer to manually encode email addresses using [ROT13](http://rot13
 
 How to use
 ----------
-Simply copy the script from the <head> of the sample document into your page where you want email addresses to be protected.
-It must preceed the display of any email addresses (so place it either in the <head> of your page, or before the first reference.
+Simply copy the script from the <code><head></code> of the sample document into your page where you want email addresses to be protected.
+It must preceed the display of any email addresses (so place it either in the <code><head></code> of your page, or before the first reference.
     
 To encode an email address
 --------------------------
