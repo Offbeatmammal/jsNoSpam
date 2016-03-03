@@ -1,10 +1,10 @@
 # jsNoSpam
-==========
+----------
 A simple Javascript library to make it harder for spambots to harvest email addresses from a site.
 
 It achieves this by encoding and obfuscating the email address in the page source, and only decoding it in response to an action by the user:
-* User mouses over the obfustated email address
-* User navigates with keyboard to obfuscated email address and presses enter
+* User mouses over the obfustated email address.
+* User navigates with keyboard to obfuscated email address and presses enter.
 
 Requires developer to manually encode email addresses using [ROT13](http://rot13.com).
 
@@ -15,8 +15,8 @@ It must preceed the display of any email addresses (so place it either in the <h
     
 To encode an email address
 --------------------------
-* visit [ROT13](http://rot13.com) or similar and encode the address
-* replace the @ with a * to further obfuscate the email address
+* visit [ROT13](http://rot13.com) or similar and encode the address.
+* (optionally) replace the @ with a * to further obfuscate the email address.
 
 To display an email address
 ---------------------------

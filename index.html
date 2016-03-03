@@ -14,6 +14,7 @@ String.prototype.rot13 = function(){
 function xm(l) {
 	// rot13 the address and display it
 	l = l.rot13();
+	// not that the link here uses an encoded piece as well simply to obfuscate the source slightly
 	return '<a href=' + 'znvygb'.rot13() +':' + l + '>' + l + '<\/a>'
 }
 
