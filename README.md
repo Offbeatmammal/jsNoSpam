@@ -27,10 +27,11 @@ Insert a small snippet as follows into the source of the web page:
     </script>
     
 The parameters are as follow:
-* ROT13 encoded email address, with the @ replaced with a *
-* true: will require user action to reveal email address
-  false: will show the email address
-* Text to over-ride the default text hiding an email address
+* Obfuscated Email: ROT13 encoded email address, (optionally) with the @ replaced with a *
+* Require user action:
+  ** true: will require user action to reveal email address
+  ** false: will show the email address
+* Message: Text to over-ride the default text hiding an email address
 
     
 
