@@ -1,5 +1,5 @@
 # jsNoSpam
-----------
+
 A simple Javascript library to make it harder for spambots to harvest email addresses from a site.
 
 It achieves this by encoding and obfuscating the email address in the page source, and only decoding it in response to an action by the user:
