@@ -6,7 +6,7 @@ It achieves this by encoding and obfuscating the email address in the page sourc
 * User mouses over the obfustated email address (can change to require an explicit click).
 * User navigates with keyboard to obfuscated email address and presses enter.
 
-The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/).
+The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)).
 
 Requires developer to manually encode email addresses using [ROT13](http://rot13.com).
 
