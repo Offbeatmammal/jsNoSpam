@@ -1,6 +1,7 @@
 # jsNoSpam
 
-A simple Javascript library to make it harder for spambots to harvest email addresses from a site. Uses 100% client-side javascript so can be deployed where you have no control over the server (eg Weebly or other template hosting sides).
+A simple Javascript library to make it harder for spambots to harvest email addresses from a site.
+Uses 100% client-side javascript so can be deployed where you have no control over the server (eg Weebly or other template hosting sites).
 
 It achieves this by encoding and obfuscating the email address in the page source, and only decoding it in response to an action by the user:
 * User mouses over the obfustated email address (can change to require an explicit click).
@@ -8,7 +9,7 @@ It achieves this by encoding and obfuscating the email address in the page sourc
 
 The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)).
 
-Requires developer to manually encode email addresses using [ROT13](http://rot13.com).
+Requires developer to manually encode email addresses using [ROT13](http://rot13.com) before inclusion in the markup.
 
 How to use
 ----------
@@ -29,8 +30,8 @@ Insert a small snippet as follows into the source of the web page:
     </script>
         
 The parameters are as follow:
-* Obfuscated Email: ROT13 encoded email address, (optionally) with the @ replaced with a *
-* Require user action:
+* Obfuscated Email Address: ROT13 encoded email address, (optionally) with the @ replaced with a *
+* Require User Action:
     * true: will require user action to reveal email address
     * false: will show the email address
 * Message: Text to over-ride the default text hiding an email address
@@ -39,10 +40,10 @@ The parameters are as follow:
 
 Note
 ----
-In order to reduce the ease of spambots to get around this, please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
+<b><i>In order to reduce the ease with which spambots can get around this, please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
 and/or consider using a JS minification service to further obscure things.
 Also, you don't have to use plain ROT13 as the only encoding scheme. There are simple variations which rotate forward/backward a different number of letters
-or you can use a different cipher scheme altogether.    
+or you can use a different cipher scheme altogether. </i></b> 
 
 Contribute
 ----------
