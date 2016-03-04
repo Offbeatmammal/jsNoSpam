@@ -1,21 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Hide Email Address from spammers</title>
+<title>Live sample for jsNoSpam</title>
 
-<script type="text/javascript" src="jsNoSpam.js"></script>
-
+<script type="text/javascript" src="https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/jsNoSpam.js">
+</script>
 </head>
 <body>
-
-Hidden, default text: <script type="text/javascript">
+<h1>Live sample for jsNoSpam</h1>
+<p>a simple demonstration for the options described in <a href="https://github.com/Offbeatmammal/jsNoSpam">jsNoSpam</a> from <a href="http://offbeatmammal.com">Offbeatmammal</a>.</p>
+<table>
+<tr>
+<td>Hidden, default text:</td>
+<td><script type="text/javascript">
         jsNSemail("bssorngznzzny*tznvy.pbz",true);
-</script><br>
-Hidden, override text: <script type="text/javascript">
+</script></td>
+</tr>
+<tr>
+<td>Hidden, override text:</td>
+<td><script type="text/javascript">
         jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");
-</script><br>
-Not hidden: <script type="text/javascript">
+</script></td>
+</tr>
+<tr>
+<td>Not hidden:</td>
+<td><script type="text/javascript">
         jsNSemail("bssorngznzzny*tznvy.pbz");
-</script>
+</script></td>
+</tr>
+</table>
 </body>
 </html>

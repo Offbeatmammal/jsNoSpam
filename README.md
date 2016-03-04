@@ -14,8 +14,6 @@ How to use
 ----------
 Simply copy the script from the <code>&lt;head></code> of the sample document into your page where you want email addresses to be protected.
 It must preceed the display of any email addresses (so place it either in the <code>&lt;head></code> of your page, or before the first reference.
-
-<script type="text/javascript" src="https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/jsNoSpam.js"></script>
     
 To encode an email address
 --------------------------
@@ -29,15 +27,15 @@ Insert a small snippet as follows into the source of the web page:
     <script type="text/javascript">
         jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");
     </script>
-    
-For example: <script type="text/javascript">jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");</script>
-    
+        
 The parameters are as follow:
 * Obfuscated Email: ROT13 encoded email address, (optionally) with the @ replaced with a *
 * Require user action:
     * true: will require user action to reveal email address
     * false: will show the email address
 * Message: Text to over-ride the default text hiding an email address
+
+[see here for live sample](https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/index.html).
 
 Note
 ----
