@@ -15,7 +15,7 @@ How to use
 Simply copy the script from the <code>&lt;head></code> of the sample document into your page where you want email addresses to be protected.
 It must preceed the display of any email addresses (so place it either in the <code>&lt;head></code> of your page, or before the first reference.
 
-<script type="text/javascript" src="https://github.com/Offbeatmammal/jsNoSpam/raw/master/jsNoSpam.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/jsNoSpam.js"></script>
     
 To encode an email address
 --------------------------
