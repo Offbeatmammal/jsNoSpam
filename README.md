@@ -3,8 +3,10 @@
 A simple Javascript library to make it harder for spambots to harvest email addresses from a site.
 
 It achieves this by encoding and obfuscating the email address in the page source, and only decoding it in response to an action by the user:
-* User mouses over the obfustated email address.
+* User mouses over the obfustated email address (can change to require an explicit click).
 * User navigates with keyboard to obfuscated email address and presses enter.
+
+The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/).
 
 Requires developer to manually encode email addresses using [ROT13](http://rot13.com).
 
@@ -33,7 +35,12 @@ The parameters are as follow:
     * false: will show the email address
 * Message: Text to over-ride the default text hiding an email address
 
-    
+Note
+----
+In order to reduce the ease of spambots to get around this, please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
+and/or consider using a JS minification service to further obscure things.
+Also, you don't have to use plain ROT13 as the only encoding scheme. There are simple variations which rotate forward/backward a different number of letters
+or you can use a different cipher scheme altogether.    
 
 Contribute
 ----------

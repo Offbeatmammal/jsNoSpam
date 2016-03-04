@@ -11,22 +11,23 @@ String.prototype.rot13 = function(){
     }).replace("*","@");
 };
 
-function xm(l) {
+function jsNSshow(l) {
 	// rot13 the address and display it
 	l = l.rot13();
 	// not that the link here uses an encoded piece as well simply to obfuscate the source slightly
 	return '<a href=' + 'znvygb'.rot13() +':' + l + '>' + l + '<\/a>'
 }
 
-function xw(e,s,t) {
+function jsNSemail(e,s,t) {
 	// e: the rot13 encoded email address (also replace @ with *)
 	// s: true require an action to reveal, false to simply show it
 	// t: if s=true optional text to override the default
 	var tDefault = "click to reveal" // default text for hidden email address
+	// note: by default this uses 'onmouseover' to reveal email, may want to change to 'onclick' for more positive action
 	if (s) {
-		document.write("<span style='cursor:pointer' tabindex='0' role='button' id='" + e + "' onkeydown='if (event.keyCode == 13) {this.outerHTML=xm(this.id); return false} else { return event.keyCode}' onmouseover='this.outerHTML=xm(this.id)'>" + (t || tDefault) + "<\/span>");
+		document.write("<span style='cursor:pointer' tabindex='0' role='button' id='" + e + "' onkeydown='if (event.keyCode == 13) {this.outerHTML=jsNSshow(this.id); return false} else { return event.keyCode}' onmouseover='this.outerHTML=jsNSshow(this.id)'>" + (t || tDefault) + "<\/span>");
 	} else {
-		document.write(xm(e));
+		document.write(jsNSshow(e));
 	}
 }
 </script>
@@ -35,13 +36,13 @@ function xw(e,s,t) {
 <body>
 
 Hidden, default text: <script type="text/javascript">
-        xw("bssorngznzzny*tznvy.pbz",true);
+        jsNSemail("bssorngznzzny*tznvy.pbz",true);
 </script><br>
 Hidden, override text: <script type="text/javascript">
-        xw("bssorngznzzny*tznvy.pbz",true,"show me the email address");
+        jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");
 </script><br>
 Not hidden: <script type="text/javascript">
-        xw("bssorngznzzny*tznvy.pbz");
+        jsNSemail("bssorngznzzny*tznvy.pbz");
 </script>
 </body>
 </html>
