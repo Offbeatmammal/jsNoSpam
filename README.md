@@ -25,7 +25,7 @@ To display an email address
 Insert a small snippet as follows into the source of the web page:
 
     <script type="text/javascript">
-        jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");
+        jsNSemail("rknzcyr*rknzcyr.pbz",true,"show me the email address");
     </script>
         
 The parameters are as follow:
