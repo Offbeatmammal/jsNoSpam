@@ -1,6 +1,6 @@
 # jsNoSpam
 
-A simple Javascript library to make it harder for spambots to harvest email addresses from a site.
+A simple Javascript library to make it harder for spambots to harvest email addresses from a site. Uses 100% client-side javascript so can be deployed where you have no control over the server (eg Weebly or other template hosting sides).
 
 It achieves this by encoding and obfuscating the email address in the page source, and only decoding it in response to an action by the user:
 * User mouses over the obfustated email address (can change to require an explicit click).
@@ -14,6 +14,8 @@ How to use
 ----------
 Simply copy the script from the <code>&lt;head></code> of the sample document into your page where you want email addresses to be protected.
 It must preceed the display of any email addresses (so place it either in the <code>&lt;head></code> of your page, or before the first reference.
+
+<script type="text/javascript" src="jsNoSpam.js"></script>
     
 To encode an email address
 --------------------------
@@ -25,8 +27,10 @@ To display an email address
 Insert a small snippet as follows into the source of the web page:
 
     <script type="text/javascript">
-        xw("bssorngznzzny*tznvy.pbz",true,"show me the email address");
+        jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");
     </script>
+    
+For example: <script type="text/javascript">jsNSemail("bssorngznzzny*tznvy.pbz",true,"show me the email address");</script>
     
 The parameters are as follow:
 * Obfuscated Email: ROT13 encoded email address, (optionally) with the @ replaced with a *
