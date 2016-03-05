@@ -37,7 +37,7 @@ Insert a small snippet as follows into the source of the web page:
 The parameters are as follow:
 * Obfuscated Email Address: ROT13 encoded email address
     * (optionally) the @ may be replaced with a * (the rot13 function looks for that)
-    * (optionally) when creating the parameter you may further obfuscate it, eg <code>jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz");</code> or <code>jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));</code>
+    * (optionally) when creating the parameter you may further obfuscate it, eg <code>jsNSemail("rknzcyr"+"\*"+"rknzcyr.pbz");</code> or <code>jsNSemail(("zbp.rycznk"+"r\*r"+"ycznkr").split('').reverse().join(''));</code>
 * Require User Action:
     * true: will require user action to reveal email address
     * false: will show the email address
