@@ -7,9 +7,14 @@ It achieves this by encoding and obfuscating the email address in the page sourc
 * User mouses over the obfustated email address (can change to require an explicit click).
 * User navigates with keyboard to obfuscated email address and presses enter.
 
-The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)).
+The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)) (If you find any issues, especially with an assistive technology please let me know, ideally with a pull request to fix it!).
 
 Requires developer to manually encode email addresses using [ROT13](http://rot13.com) before inclusion in the markup.
+
+The goal is to make the addresses clickable, not require a user to convert from an image or remove words/change the address in any way.
+
+<b>Caveat:</b> As you do still have the email address in plain text in the javascript there will come a time when a crawler will be able to extract it if it's worth the effort
+(hence the <a href="#note">note below</a>, so a Contact Us form with CATPCHA and other protections will always be more secure.
 
 How to use
 ----------
@@ -30,7 +35,9 @@ Insert a small snippet as follows into the source of the web page:
     </script>
         
 The parameters are as follow:
-* Obfuscated Email Address: ROT13 encoded email address, (optionally) with the @ replaced with a *
+* Obfuscated Email Address: ROT13 encoded email address
+    * (optionally) the @ may be replaced with a * (the rot13 function looks for that)
+    * (optionally) when creating the parameter you may further obfuscate it, eg <code>jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz");</code> or <code>jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));</code>
 * Require User Action:
     * true: will require user action to reveal email address
     * false: will show the email address
@@ -40,10 +47,10 @@ The parameters are as follow:
 
 Note
 ----
-<b><i>In order to reduce the ease with which spambots can get around this, please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
-and/or consider using a JS minification service to further obscure things.
+<b><i>In order to reduce the ease with which spambots can get around this (helping preserve the value for everyone!), please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
+and/or consider using a JS minification/uglification service to further obscure things.</b></i>
 Also, you don't have to use plain ROT13 as the only encoding scheme. There are simple variations which rotate forward/backward a different number of letters
-or you can use a different cipher scheme altogether. </i></b> 
+or you can use a different cipher scheme altogether.
 
 Contribute
 ----------

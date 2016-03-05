@@ -18,14 +18,14 @@
 </tr>
 <tr>
 <td>Hidden, override text:</td>
-<td><script type="text/javascript">
-        jsNSemail("rknzcyr*rknzcyr.pbz",true,"show me the email address");
+<td><script type="text/javascript"> // demonstrate splitting up source email
+        jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",true,"show me the email address");
 </script></td>
 </tr>
 <tr>
 <td>Not hidden:</td>
-<td><script type="text/javascript">
-        jsNSemail("rknzcyr*rknzcyr.pbz");
+<td><script type="text/javascript"> // demonstrate more complex pre-processing on email
+        jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));
 </script></td>
 </tr>
 </table>

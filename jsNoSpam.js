@@ -10,7 +10,7 @@ function jsNSshow(l) {
 	// rot13 the address and display it
 	l = l.rot13();
 	// note that the link here uses an encoded mailto as well to obfuscate the source slightly
-	return '<a href=' + 'znvygb'.rot13() +':' + l + '>' + l + '<\/a>'
+	return '<a href=' + 'znvygb'.rot13() +':' + l + ' rel="nofollow">' + l + '<\/a>'
 }
 
 function jsNSemail(e,s,t) {
