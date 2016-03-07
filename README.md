@@ -61,3 +61,5 @@ requests from feature branches.
 License
 -------
 See Licence file in repo, or refer to http://unlicense.org
+
+If you do make use of this it would be great it you could comment [here](http://post.offbeatmammal.com/2016/03/06/jsnospam-make-it-harder-for-bots-to-find-your-eamil-address/) just so I can get an idea of how useful people find this.
