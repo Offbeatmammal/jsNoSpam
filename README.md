@@ -52,6 +52,11 @@ and/or consider using a JS minification/uglification service to further obscure 
 Also, you don't have to use plain ROT13 as the only encoding scheme. There are simple variations which rotate forward/backward a different number of letters
 or you can use a different cipher scheme altogether.
 
+
+If you do make use of this it would be great it you could comment [here](http://post.offbeatmammal.com/2016/03/06/jsnospam-make-it-harder-for-bots-to-find-your-email-address/) just so I can get an idea of how useful people find this.
+
+If you make use of this and like it and want to give something back... [I wrote a book!](http://amzn.to/1SHjbLI) :)
+
 Contribute
 ----------
 This project can be forked from
@@ -61,5 +66,3 @@ requests from feature branches.
 License
 -------
 See Licence file in repo, or refer to http://unlicense.org
-
-If you do make use of this it would be great it you could comment [here](http://post.offbeatmammal.com/2016/03/06/jsnospam-make-it-harder-for-bots-to-find-your-email-address/) just so I can get an idea of how useful people find this.
