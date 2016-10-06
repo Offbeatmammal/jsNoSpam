@@ -47,7 +47,7 @@ The parameters are as follow:
 
 Note
 ----
-<b><i>In order to reduce the ease with which spambots can get around this (helping preserve the value for everyone!), please rename the functions <code>jsNSemail</code> and <code>jsNSemail</code> in your deployment, 
+<b><i>In order to reduce the ease with which spambots can get around this (helping preserve the value for everyone!), please rename the functions <code>jsNSshow</code> and <code>jsNSemail</code> in your deployment, 
 and/or consider using a JS minification/uglification service to further obscure things.</b></i>
 Also, you don't have to use plain ROT13 as the only encoding scheme. There are simple variations which rotate forward/backward a different number of letters
 or you can use a different cipher scheme altogether.
