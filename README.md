@@ -41,7 +41,7 @@ The parameters are as follow:
 * Require User Action:
     * true: will require user action to reveal email address
     * false: will show the email address
-* Message: Text to over-ride the default text hiding an email address
+* Message: Text to over-ride the default text hiding an email address. This can either be just text, or HTML (eg includes styling or images). Remember, if using HTML to ensure it is [A11y friendly](http://a11yproject.com/) and suitable for cross-platform display.
 
 [see here for live sample](https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/index.html).
 

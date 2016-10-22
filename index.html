@@ -9,6 +9,7 @@
 <body>
 <h1>Live sample for jsNoSpam</h1>
 <p>a simple demonstration for the options described in <a href="https://github.com/Offbeatmammal/jsNoSpam">jsNoSpam</a> from <a href="http://post.offbeatmammal.com/2016/03/06/jsnospam-make-it-harder-for-bots-to-find-your-email-address/">Offbeatmammal</a>.</p>
+<p>View the source for each example to see more explaination.</p>
 <table>
 <tr>
 <td>Hidden, default text:</td>
@@ -17,13 +18,14 @@
 </script></td>
 </tr>
 <tr>
-<td>Hidden, override text:</td>
-<td><script type="text/javascript"> // demonstrate splitting up source email
+<td>Hidden, override text (source also shows example of splitting email):</td>
+<td><script type="text/javascript"> // also demonstrate splitting up source email
+                                    // over-ride text (3rd parameter) can be text, or more complex HTML
         jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",true,"show me the email address");
 </script></td>
 </tr>
 <tr>
-<td>Not hidden:</td>
+<td>Not hidden (but source shows a more complex way of breaking up, and reversing, parts of the email):</td>
 <td><script type="text/javascript"> // demonstrate more complex pre-processing on email
         jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));
 </script></td>
