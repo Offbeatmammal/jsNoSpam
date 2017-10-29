@@ -7,11 +7,11 @@ It achieves this by encoding and obfuscating the email address in the page sourc
 * User mouses over the obfustated email address (can change to require an explicit click).
 * User navigates with keyboard to obfuscated email address and presses enter.
 
-The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)). Also works on iOS (iPhone and iPad) and Android browsers. (If you find any issues, especially with an assistive technology please let me know, ideally with a pull request to fix it!).
+The user experience supports mouse, touch, keyboard control and is speech reader compliant (tested with [NVDA](http://www.nvaccess.org/)). Also works on iOS (iPhone and iPad) and Android browsers. (If you find any issues, especially with an assistive technology, please let me know... ideally with a pull request to fix it!).
 
 Requires developer to manually encode email addresses using [ROT13](http://rot13.com) before inclusion in the markup.
 
-The goal is to make the addresses clickable, not require a user to convert from an image or remove words/change the address in any way.
+The goal is to make the addresses clickable, and not require a user to convert from an image or remove words/change the address in any way.
 
 <b>Caveat:</b> As you do still have the email address in plain text in the javascript there will come a time when a crawler will be able to find and extract it from the DOM if it's worth the effort
 (hence the <a href="#note">note below</a>, so a Contact Us form with CATPCHA and other protections will always be more secure.
@@ -39,7 +39,7 @@ The parameters are as follow:
     * (optionally) the @ may be replaced with a * (the rot13 function looks for that)
     * (optionally) when creating the parameter you may further obfuscate it, eg <code>jsNSemail("rknzcyr"+"\*"+"rknzcyr.pbz");</code> or <code>jsNSemail(("zbp.rycznk"+"r\*r"+"ycznkr").split('').reverse().join(''));</code>
 * Require User Action:
-    * true: will require user action to reveal email address (recommended)
+    * true: will require user action to reveal email address (recommended, default if not supplied)
     * false: will show the email address without requiring interaction
 * Message: Text to over-ride the default text hiding an email address. This can either be just text, or HTML (eg includes styling or images). Remember, if using HTML to ensure it is [A11y friendly](http://a11yproject.com/) and suitable for cross-platform display.
 

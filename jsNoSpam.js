@@ -15,8 +15,11 @@ function jsNSshow(l) {
 
 function jsNSemail(e,s,t) {
 	// e: the rot13 encoded email address (also replace @ with *)
-	// s: true require an action to reveal, false to simply show it
+	// s: true require an action to reveal, false to simply show it. Default=True
 	// t: if s=true optional text to override the default
+	if (typeof s === 'undefined') {
+    	s= true;
+	}
 	var tDefault = "click to reveal" // default text for hidden email address
 	// note: by default this uses 'onmouseover' to reveal email, may want to change to 'onclick' for more positive action
 	if (s) {
