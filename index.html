@@ -25,6 +25,13 @@
 </script></td>
 </tr>
 <tr>
+<td>Hidden, override text, wth HTML formatting:</td>
+<td><script type="text/javascript"> // also demonstrate splitting up source email
+                                    // over-ride text (3rd parameter) can be text, or more complex HTML
+        jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",true,"show <b><i>me</i></b> the <b>email address</b>");
+</script></td>
+</tr>
+<tr>
 <td>Not hidden (but source shows a more complex way of breaking up, and reversing, parts of the email):</td>
 <td><script type="text/javascript"> // demonstrate more complex pre-processing on email
         jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));
