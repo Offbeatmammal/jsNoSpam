@@ -43,7 +43,7 @@ The parameters are as follow:
     * false: will show the email address without requiring interaction
 * Message: Text to over-ride the default text hiding an email address. This can either be just text, or HTML (eg includes styling or images). Remember, if using HTML to ensure it is [A11y friendly](http://a11yproject.com/) and suitable for cross-platform display.
 
-[see here for live sample](https://cdn.rawgit.com/Offbeatmammal/jsNoSpam/master/index.html).
+[See here for live sample](https://cdn.jsdelivr.net/gh/Offbeatmammal/jsNoSpam@509d061c75214e80387707748a9ca271adadf6c0/index.html).
 
 Note
 ----
