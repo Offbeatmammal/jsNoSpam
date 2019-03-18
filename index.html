@@ -5,6 +5,35 @@
 
 <script type="text/javascript" src="jsNoSpam.js">
 </script>
+<style>
+a {
+text-decoration: none;
+        }
+.highlight, .highlight:hover, .highlight:focus {
+  text-decoration: none;
+  outline: none;
+  outline: 0;
+  background: yellow;
+}
+.highlight {
+  line-height: 1.1;
+  display: inline-block;
+}
+.highlight:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #0082a7; /*#CE3B2F*/
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.highlight:hover:after, .highlight:focus:after {
+  width: 100%;
+}
+</style>
 </head>
 <body>
 <h1>Live sample for jsNoSpam</h1>
@@ -37,6 +66,27 @@
         jsNSemail(("zbp.rycznk"+"r*r"+"ycznkr").split('').reverse().join(''));
 </script></td>
 </tr>
+<tr>
+<td>Hidden, override text, wth style class:</td>
+<td><script type="text/javascript"> // also demonstrate splitting up source email
+        // over-ride text (3rd parameter) can be text, or more complex HTML
+        jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",true,"show <b><i>me</i></b> the <b>email address</b>","highlight");
+</script></td>
+</tr>
+<tr>
+<td>Hidden, no override text text, wth style class:</td>
+<td><script type="text/javascript"> // also demonstrate splitting up source email
+        // over-ride text (3rd parameter) can be text, or more complex HTML
+        jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",true,"","highlight");
+</script></td>
+</tr>                
+<tr>
+<td>Not hidden, so no override text text, but wth style class:</td>
+<td><script type="text/javascript"> // also demonstrate splitting up source email
+        // over-ride text (3rd parameter) can be text, or more complex HTML
+        jsNSemail("rknzcyr"+"*"+"rknzcyr.pbz",false,"highlight");
+</script></td>
+</tr>                
 </table>
 
 <p>If this helps you and you want to give back... <a href="http://amzn.to/1SHjbLI">I wrote a book</a> :)</p>

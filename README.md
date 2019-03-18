@@ -31,7 +31,7 @@ To display an email address
 Insert a small snippet as follows into the source of the web page:
 
     <script type="text/javascript">
-        jsNSemail("rknzcyr*rknzcyr.pbz",true,"show me the email address");
+        jsNSemail("rknzcyr*rknzcyr.pbz",true,"show me the email address","styleclass");
     </script>
         
 The parameters are as follow:
@@ -42,6 +42,9 @@ The parameters are as follow:
     * true: will require user action to reveal email address (recommended, default if not supplied)
     * false: will show the email address without requiring interaction
 * Message: Text to over-ride the default text hiding an email address. This can either be just text, or HTML (eg includes styling or images). Remember, if using HTML to ensure it is [A11y friendly](http://a11yproject.com/) and suitable for cross-platform display.
+* StyleClass:
+    * name of the class that should be applied to the email address when visible
+    * if _require user action_ is true, this will be the fourth parameter (if you don't want to override the _Message_ simply leave the third parameter as an empty string <code>""</code>). If _require user action_ is false, this will be the third parameter
 
 [See here for live sample](https://obm.one/jsnospam).
 
